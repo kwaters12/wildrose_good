@@ -9,8 +9,7 @@ gem 'pg'
 gem 'alchemy_spree', github: 'magiclabs/alchemy_spree', branch: 'master'
 gem 'alchemy-devise', '~> 2.0'
 
-
-
+gem 'spree_bootstrap_frontend', github: 'kwaters12/spree_bootstrap_frontend', branch: '2-3-stable'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
