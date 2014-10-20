@@ -12,6 +12,8 @@ gem 'alchemy-devise', '~> 2.0'
 gem 'spree_bootstrap_frontend', github: 'kwaters12/spree_bootstrap_frontend', branch: '2-3-stable'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'haml-rails'
+gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

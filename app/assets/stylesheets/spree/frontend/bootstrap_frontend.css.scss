@@ -3,6 +3,29 @@
 $icon-font-path: "../../bootstrap/";
 @import "bootstrap";
 
+body {
+  background-color: #fae2e2 !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+.container {max-width: 1000px;}
+.navbar {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+  }
+}
+.logo {
+  width: 100%;
+  display: block;
+  img {
+    margin-left: 33%;
+    width: 300px;
+  }
+}
+
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
   background: #1c5c92 asset-url('spree_header.jpg') center center;
