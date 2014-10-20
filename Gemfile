@@ -14,6 +14,7 @@ gem 'spree_bootstrap_frontend', github: 'kwaters12/spree_bootstrap_frontend', br
 gem 'sass-rails', '~> 4.0.3'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'rails_12factor'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
