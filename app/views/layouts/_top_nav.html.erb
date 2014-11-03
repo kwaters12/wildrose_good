@@ -1,12 +1,32 @@
 <div class="container">
-  <div class="row navbar navbar-right">
+  <div class="row navbar navbar-fixed navbar-right">
     <ul>
-      <li>Shopping Cart (0) |</li>
-      <li>Account |</li>
+      <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to Spree.t(:cart), '/cart' %>
+        </noscript>
+        &nbsp;
+      </li>
+      <script>Spree.fetch_cart()</script>
+      <li>| Account |</li>
       <li>Log Out</li>
     </ul>
   </div>
   <div class="row text-center logo">
-    <img class="center-block" src="https://s3-us-west-2.amazonaws.com/wildrose/WildRoseLogo1_Web.png">
+    <%= link_to image_tag("https://s3-us-west-2.amazonaws.com/wildrose/WildRoseLogo1_Web.png"), shop.root_url %>
   </div>
+
+    <%# max_level = Spree::Config[:max_level_in_taxons_menu] || 2 %>
+    <%# @taxonomies.each do |taxonomy| %>
+    <%# if taxonomy.name === 'Categories' %>
+      
+        <%# cache [I18n.locale, taxonomy, max_level] do %>
+        <div class="box">
+          
+          <%#= taxons_tree(taxonomy.root, @taxon, max_level) %>
+        </div>
+        <%# end %>
+    <%# end %>
+    <span class="stretch"></span>
+    <%# end %>
 </div>
