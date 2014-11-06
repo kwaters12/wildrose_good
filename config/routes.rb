@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  mount Spree::Core::Engine => '/shop', as: 'shop'
-        
+
+  mount Spree::Core::Engine => "/shop"
+    mount Alchemy::Engine => '/'
 
 
-  mount Alchemy::Engine => '/'
+  
 
 end

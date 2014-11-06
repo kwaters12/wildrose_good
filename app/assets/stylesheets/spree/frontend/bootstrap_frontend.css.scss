@@ -8,6 +8,8 @@ body {
   font-family: 'Playfair Display', serif !important;
 }
 
+.list-group { width: 100%; margin: 0 auto; display: block;}
+.list-group-item { float:left; width: auto; padding: 10px 3.4% ;}
 .container {max-width: 1000px;}
 .navbar {
   margin-bottom: 0;
